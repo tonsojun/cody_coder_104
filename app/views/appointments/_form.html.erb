@@ -11,15 +11,6 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :date, 'Start Time' %>
-    <%= form.datetime_select :date %>
-  </div>
-
-  <div class="field">
-    <%= form.label :end_date, 'End Time' %>
-    <%= form.datetime_select :end_date %>
-  </div>
 
   <div class="field">
     <%= form.label :physician_id %>
@@ -31,6 +22,16 @@
     <%= form.collection_select :patient_id, Patient.all, :id, :name %>
   </div>
 
+  <div class="field">
+    <%= form.label :date, 'Start Time' %>
+    <%= form.datetime_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date, 'End Time' %>
+    <%= form.datetime_select :end_date %>
+  </div>
+  
   <div class="actions">
     <%= form.submit %>
   </div>

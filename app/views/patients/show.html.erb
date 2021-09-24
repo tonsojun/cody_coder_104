@@ -5,5 +5,6 @@
   <%= @patient.name %>
 </p>
 
+<%= link_to 'New Appointment', new_appointment_path(@patient) %> |
 <%= link_to 'Edit', edit_patient_path(@patient) %> |
 <%= link_to 'Back', patients_path %>
