@@ -12,8 +12,13 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :date %>
+    <%= form.label :date, 'Start Time' %>
     <%= form.datetime_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date, 'End Time' %>
+    <%= form.datetime_select :end_date %>
   </div>
 
   <div class="field">
@@ -29,4 +34,5 @@
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>
